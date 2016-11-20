@@ -2,7 +2,7 @@
 
 <head>
     <%- include('../load'); %>
-        <!--    추가 css-->
+        <!-- 추가 css-->
         <link href="/CSS/navbar.css" rel="stylesheet">
         <link href="/CSS/postView.css" rel="stylesheet">
         <style>
@@ -29,12 +29,12 @@
     <%- include('../navbar', {search_on: true,active:4,page:"/blog/search"}); %>
         <div class="content-container">
             <div class="top-container">
-                <div class="seriesName-container"> <span id="series">                    시리즈                </span> <span id="seriesName">                    대회, 컨퍼런스                </span> </div>
+                <div class="seriesName-container"> <span id="series"> 시리즈  </span> <span id="seriesName"> <a href="/my/seriesClicked">대회, 컨퍼런스</a>  </span> </div>
                 <div class="contentName-container">
                     <div id="editViewTitle">WHITECON 컨퍼런스</div>
                     <div id="editViewDate">2016.11.02. 00:09</div>
                 </div>
-                <div class="userName-container"> <img src="/image/guUser.png" style="    width: 30px;"> 박상천 </div>
+                <div class="userName-container"> <img src="/image/guUser.png" style=" width: 30px;"> <a href="/my/post">박상천</a> </div>
             </div>
             <div class="middle-container">
                 <div id="editViewContents">
@@ -45,12 +45,12 @@
                     <p> 2번째 프로젝트 소개는 남자분이 자동차 보안에 대해 설명해주셨습니다 자동차 해킹 가능성과 보안필요성에대해 설명을 들으면서 자동차가 CAN이라는 프로토콜을 쓰고 브로드캐스트 형식으로 보내서 스니핑에 취약하다는 것을 알게되어 좋았습니다 조금 아쉬운 점을 말하자면 해결하신 방법을 아직 공개를 못하신다고 하셔서.. 살짝 아쉬움이 남았습니다 그리고 이런 프로젝트를 한번 해보고 싶다는 생각이 들었습니다.</p> <br> <img style="width:100%" src="/image/shang3.jpeg"> <br>
                     <h4> 소감: 컨퍼런스 많이 참여해야겠다! </h4>
                 </div>
-                <div id="editViewInfo"> <span>                    <img src="/image/heart.png">                    0                </span> <span>                    <img  src="/image/conversation.png">                    0                </span> <span style="    float: right;">                    <img src="/image/export.png">                </span> </div>
+                <div id="editViewInfo" style="display:none"> <span> <img src="/image/heart.png"> 0  </span> <span> <img src="/image/conversation.png"> 0  </span> <span style=" float: right;"> <img src="/image/export.png">  </span> </div>
             </div>
-            <div class="bottom-container">
-                <div style="    /* width: 40%; */    height: 100px;    overflow: hidden;    margin: 10px;    position: relative;    ">
-                    <div style="    width: 49%;    position: absolute;"><img style="position:absolute;    left: -100%;    right: -100%;    top: -100%;    bottom: -100%;    margin: auto;    min-height: 100%;    min-width: 100%;" src="http://lorempixel.com/20/500"></div>
-                    <div style="    right: 0;    height: 100px;    width: 49%;    position: absolute;"><img style="position:absolute;    left: -100%;    right: -100%;    top: -100%;    bottom: -100%;    margin: auto;    min-height: 100%;    min-width: 100%;" src="http://lorempixel.com/20/500"></div>
+            <div class="bottom-container" style="display:none">
+                <div style=" /* width: 40%; */ height: 100px; overflow: hidden; margin: 10px; position: relative; ">
+                    <div style=" width: 49%; position: absolute;"><img style="position:absolute; left: -100%; right: -100%; top: -100%; bottom: -100%; margin: auto; min-height: 100%; min-width: 100%;" src="http://lorempixel.com/20/500"></div>
+                    <div style=" right: 0; height: 100px; width: 49%; position: absolute;"><img style="position:absolute; left: -100%; right: -100%; top: -100%; bottom: -100%; margin: auto; min-height: 100%; min-width: 100%;" src="http://lorempixel.com/20/500"></div>
                 </div>
             </div>
         </div>
