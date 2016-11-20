@@ -13,7 +13,10 @@ router.get('/', function (req, res) {
 
 router.post('/', function (req, res) {
     var id = req.body.id;
-    var pw = req.body.password;
+    var pw = req.body.passwd;
+    console.log(id);
+    console.log(pw);
+
 
     if (id === '' || pw === '') {
         res.redirect('login', {
@@ -31,7 +34,8 @@ router.post('/', function (req, res) {
         if (users) {
             console.log(users);
             req.session.nickname = users.username;
-            console.log(req.session.nickname);
+            console.log("user login: " + req.session.nickname);
+
             res.redirect('/');
         } else {
             res.render('login', {

@@ -3,7 +3,6 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res) {
-    console.log("user login: " + req.session.nickname);
     res.render('index', {
         nickname: req.session.nickname
     });
@@ -14,9 +13,10 @@ router.get('/search', function (req, res) {
     });
 });
 router.post('/search', function (req, res) {
-    //req.body.search
+    var data = req.body.data;
     res.render('search', {
-        nickname: req.session.nickname
+        nickname: req.session.nickname,
+        data: data
     });
 });
 

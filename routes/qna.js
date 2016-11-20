@@ -22,8 +22,10 @@ router.get('/search', function (req, res) {
 });
 
 router.post('/search', function (req, res) {
+    var data = req.body.data;
     res.render('qna/qna_search', {
-        nickname: req.session.nickname
+        nickname: req.session.nickname,
+        data: data
     });
 });
 

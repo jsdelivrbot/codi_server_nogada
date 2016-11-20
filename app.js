@@ -25,6 +25,7 @@ var signup = require('./routes/signup');
 var app = express();
 
 var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/code');
 var db = mongoose.connection;
 
@@ -48,8 +49,12 @@ var UserSchema = new mongoose.Schema({
 
 
 var DicSchema = new mongoose.Schema({
-    title: {type: String},
-    contents: {type: String},
+    title: {
+        type: String
+    },
+    contents: {
+        type: String
+    },
 });
 
 var BoardSchema = new mongoose.Schema({
@@ -150,11 +155,11 @@ app.use('/qna', qna);
 app.use('/dictionary', dictionary);
 app.use('/blog', blog);
 app.use('/my', my);
-app.use('/login',login);
-app.use('/signup',signup);
+app.use('/login', login);
+app.use('/signup', signup);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
@@ -165,7 +170,7 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
+    app.use(function (err, req, res, next) {
         res.status(err.status || 500);
         res.render('error', {
             message: err.message,
@@ -176,7 +181,7 @@ if (app.get('env') === 'development') {
 
 // production error handler
 // no stacktraces leaked to user
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
         message: err.message,
