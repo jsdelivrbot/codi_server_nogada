@@ -1,0 +1,105 @@
+<!--이미지 처리-->
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://getbootstrap.com/examples/dashboard/ -->
+<html lang="en">
+
+<head>
+    <%- include("../load"); %>
+        <!--    추가 css-->
+        <link href="/CSS/seriesCicked.css" rel="stylesheet">
+        <style>
+            .navbar-nav>li>a {
+                color: #777 !important;
+            }
+            
+            #bs-example-navbar-collapse-1 {
+                background-color: whitesmoke;
+            }
+
+        </style>
+</head>
+
+<body>
+    <%- include('../navbar', {search_on: false,active:0}); %>
+        <div>
+            <div class="woodBg">
+                <div class="woodIn">
+                    <div class="subTitle"> <span style="font-size: large;">박상천 님의 시리즈</span> </div>
+                    <div class="mainTitle">
+                        <h1 style="font-size:xx-large;">대회, 컨퍼런스</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="subHeader">
+                <div> <span class="subHeaderMenu" style="
+  padding-bottom: 12px;
+"><a href="/my/profile" style="color: #fff;">프로필</a></span>
+                    <span class="subHeaderMenu" style="
+padding-bottom: 12px;
+"><a href="/my/post" style="color: #fff;">포스트</a></span>
+                    <span class="subHeaderMenu" style="
+border-bottom-style: solid;
+padding-bottom: 12px;
+"><a href="/my/series" style="color: #fff;">시리즈</a></span>
+                    <span class="subHeaderMenu" style="
+padding-bottom: 12px;
+"><a href="/my/tutorial" style="color: #fff;">튜토리얼</a></span>
+
+                </div>
+            </div>
+            <div style="
+    padding-top: 30px;
+">
+                <div class="media series-card">
+                    <div class="media-body" id="cardTitle">
+                        <h4 class="media-heading">대회, 컨퍼런스</h4>
+                        <div id="cardTime">17분전</div>
+                        <div id="cardText">IOT 디도스 공격에 美 인터넷 마비</div>
+                        <div id="cardEtc"> <img src="/image/memo.png"> 2 </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#"> <img class="media-object" id="sumnail" src="/image/hacking.jpg" alt="..." style="
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+"> </a>
+                    </div>
+                    <div class="media-right" style="
+    position: absolute;
+    bottom: 15px;
+    right: 3%;
+">
+                        <a href="/blog_edit"> <img class="media-object" src="/image/plus.png" alt="..." style="
+    width: 20px;
+"> </a>
+                    </div>
+                </div>
+                <div class="media series-card">
+                    <div class="media-body" id="cardTitle">
+                        <h4 class="media-heading">python</h4>
+                        <div id="cardTime">43분전</div>
+                        <div id="cardText">[파이썬 챌린지]3번 문제</div>
+                        <div id="cardEtc"> <img src="/image/memo.png"> 3 </div>
+                    </div>
+                    <div class="media-right">
+                        <a href=""> <img class="media-object" id="sumnail" src="/image/python.png" alt="..." style="
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+"> </a>
+                    </div>
+                    <div class="media-right" style="
+    position: absolute;
+    bottom: 15px;
+    right: 3%;
+">
+                        <a href="/blog_edit"> <img class="media-object" src="/image/plus.png" alt="..." style="
+    width: 20px;
+"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

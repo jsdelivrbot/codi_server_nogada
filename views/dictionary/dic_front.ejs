@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <%- include('../load'); %>
+        <style>
+            .navbar-nav>li>a {
+                color: #777 !important;
+            }
+            
+            #bs-example-navbar-collapse-1 {
+                background-color: whitesmoke;
+            }
+            
+            .btn-circle {
+                margin: 0;
+                padding: 0;
+            }
+
+        </style>
+</head>
+
+<body>
+    <%- include('../navbar', {search_on: true,active:2,page:"/dictionary/search"}); %>
+        <div class="container">
+            <div class="row" style="
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+">
+                <h1 style="
+    margin-bottom: 20px;
+">CODINATION</h1>
+                <form class="classNameHere" role="search" style="margin-bottom: 20px;min-height: 1;">
+                    <div class="input-group" style="
+    margin-right: 2px;
+    margin-left: 2px;
+    min-height: 1;
+">
+                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" style="
+    min-height: 45px;
+">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit" style="
+    min-height: 45px;
+    height: 34px;
+    "><img src="/image/search.png" style="
+    width: 20px;
+    height: 20px;"></button>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <button type="button" class="btn btn-default btn-circle btn-lg" style="
+    font-size: medium;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+">ALL</button>
+                    <button type="button" class="btn btn-default btn-circle btn-lg" style="
+    font-size: medium;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+">C#</button>
+                    <button type="button" class="btn btn-default btn-circle btn-lg" style="
+    font-size: medium;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+">JAVA</button>
+                    <button type="button" class="btn btn-default btn-circle btn-lg" style="
+    font-size: medium;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+">HTML5</button>
+                    <button type="button" class="btn btn-default btn-circle btn-lg" style="
+    font-size: medium;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+">Python</button>
+                    <button type="button" class="btn btn-default btn-circle btn-lg" style="
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    font-size: medium;
+">java
+                    <br>script</button>
+                    <button type="button" class="btn btn-default btn-circle btn-lg" style="
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    font-size: medium;
+">...</button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

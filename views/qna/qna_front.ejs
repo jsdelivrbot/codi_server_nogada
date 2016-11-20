@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../load'); %>
+        <style>
+            .navbar-nav>li>a {
+                text-align: left;
+            }
+            
+            .navbar-nav>li>a {
+                color: #777 !important;
+            }
+            
+            #bs-example-navbar-collapse-1 {
+                background-color: whitesmoke;
+            }
+            
+            @media (max-width: 720px) {
+                .answer {
+                    display: none;
+                }
+            }
+
+        </style>
+</head>
+
+<body>
+    <%- include('../navbar', {search_on: true,active:3,page:"/qna/search"}); %>
+        <div id="qna-container" style="
+    /* margin: 10%; */
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+">
+            <div style="border-color: #EAEAEA; border-style: solid;">
+                <div style="
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+">
+                    <div style="
+    font-size: 15px;
+    padding-bottom: 10px;
+">전체</div>
+                    <div style="
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #EAEAEA;
+">
+                        <div style="
+    margin-bottom: 20px;
+">
+                            <div> <a href="/qna/contents" style="font-size: 30px;">asdf</a> <span style="
+    margin-left: 5px;
+">2000.00.00</span> </div>
+                            <div class="media">
+
+
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                </div>
+                                <div class="media-right">
+                                    <a href="#">
+                                        <div class="answer" style="color: #696969;
+      border-width: 2px;
+      border-color: #EAEAEA;
+      border-style: solid;
+      border-radius: 50%;
+      padding: 15px;
+          text-align: center;
+      "> <span style="
+      font-size: 20px;
+      ">3</span>
+                                            <br>answer </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="
+    margin-top: 5px;
+"> <img src="/image/user.png" style="
+    width: 20px;
+    height: 20px;
+"> <span style="
+    margin-left: 5px;
+">구자민</span> </div>
+                        </div>
+                    </div>
+                    <div style="
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #EAEAEA;
+">
+                        <div style="
+    margin-bottom: 20px;
+">
+                            <div> <a href="/qna/contents" style="font-size: 30px;">asdf</a> <span style="
+    margin-left: 5px;
+">2000.00.00</span> </div>
+                            <div class="media">
+
+
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                </div>
+                                <div class="media-right">
+                                    <a href="#">
+                                        <div class="answer" style="color: #696969;
+      border-width: 2px;
+      border-color: #EAEAEA;
+      border-style: solid;
+      border-radius: 50%;
+      padding: 15px;
+      text-align: center;
+
+      "> <span style="
+      font-size: 20px;
+      " v>3</span>
+                                            <br>answer </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div style="
+    margin-top: 5px;
+"> <img src="/image/user.png" style="
+    width: 20px;
+    height: 20px;
+"> <span style="
+    margin-left: 5px;
+">구자민</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="..." style="
+    text-align: center;
+    /* border: none; */
+">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> <span class="sr-only">Previous</span> </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> <span class="sr-only">Next</span> </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+</body>
+
+</html>
